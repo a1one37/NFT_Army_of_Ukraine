@@ -24,7 +24,7 @@ body, html {
 	background-color: var(--dark);
 	color: #fff;
 	font-family: raleway_m, sans-serif;
-	/* overflow: hidden; */
+	overflow: hidden;
 	line-height: 1.8;
 }
 .slider {
@@ -40,7 +40,6 @@ body, html {
 .slider__item {
 	max-height: 75vh;
 	overflow: hidden;
-	cursor: pointer;
 	transition: transform var(--transition), box-shadow var(--transition);
 }
 .slider__img {
@@ -96,3 +95,44 @@ body, html {
 .description.hidden p {
 	transform: translateY(2vh);
 }
+.opensea{
+	cursor: pointer;
+	position: absolute;
+	left: 93%;
+	top: 5%;
+	z-index: 10;
+}
+
+
+@media screen and (max-width: 800px) {		
+
+	.swiper-slide{
+		width: 230px !important;
+}
+.slider {
+	
+	top: 20vh;
+    width: 750px;	
+}
+
+.slider__img {
+	width: 300%;
+	height: 70%;
+	
+}
+.swiper-wrapper {
+    top: 12%;
+    left: -16%;
+    
+}
+
+.opensea {
+    cursor: pointer;
+    position: absolute;
+    left: 78%;
+    top: 5%;
+    z-index: 10;
+}
+}
+
+
